@@ -125,12 +125,12 @@ export function Awards() {
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
               }}
             >
-              <h3 className="text-5xl font-bold mb-2 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+             <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent min-w-0 overflow-hidden">
                 <AnimatedCounter 
                   value={award.numValue} 
                   suffix={award.suffix} 
                   isInView={isIntersecting}
-                  className="font-extrabold"
+                  className="font-extrabold text-nowrap"
                 />
               </h3>
               <p className="text-gray-600 font-medium">{award.label}</p>
